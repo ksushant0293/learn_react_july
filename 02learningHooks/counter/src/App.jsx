@@ -4,11 +4,19 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] =useState(5)
+  let [counter, setCounter] =useState(15)
 
   const addValue = () => {
-    if(counter < 10){
-      setCounter(counter = counter + 1 )
+    if(counter < 30){
+      setCounter(prevcounter =>prevcounter + 1)
+      setCounter(prevcounter =>prevcounter + 1)
+      setCounter(prevcounter =>prevcounter + 1)
+      setCounter(prevcounter =>prevcounter + 1)
+      setCounter(prevcounter =>prevcounter + 1)
+      // setCounter(counter = counter + 1 )
+      // setCounter(counter = counter + 1 )
+      // setCounter(counter = counter + 1 )
+      // setCounter(counter = counter + 1 )
       console.log("value added", counter);
     }else{
       alert("can't count above 10")
