@@ -1,7 +1,7 @@
 import { useState } from 'react'
-
+import Abc from "./Abc"
 import './App.css'
-
+import Fruit from "./Fruits"
 function App() {
 
   let [counter, setCounter] =useState(15)
@@ -16,10 +16,10 @@ function App() {
       // setCounter(counter = counter + 1 )
       // setCounter(counter = counter + 1 )
       // setCounter(counter = counter + 1 )
-      // setCounter(counter = counter + 1 )
+      // setCounter(counter = counter + 1 )lss
       console.log("value added", counter);
     }else{
-      alert("can't count above 10")
+      alert("can't count above 30")
     }
   }
 
@@ -40,7 +40,8 @@ function App() {
       <br/>
       <button onClick={removeValue}>Remove value{counter}</button>
       <p>Footer{counter}</p>
-
+      <Abc name= "sushant" counter = {counter}  />
+      <Fruit />
     </>
   )
 }
